@@ -11,7 +11,7 @@ router.post('/login', async (req, res) => {
     const { username, password } = req.body;
 
     if (!username || !password) {
-      return res.status(400).json({ error: 'Usuario y contraseña son requeridos' });
+      return res.status(400).json({ error: 'Usuario y contraseña son necesarios' });
     }
 
     // Buscar usuario en la base de datos
